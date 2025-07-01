@@ -1,0 +1,28 @@
+{
+  "name": "reactjs",
+  "version": "1.0.0",
+  "description": "This is a React repo...",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mayankrajora/ReactJs.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "Mayank",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mayankrajora/ReactJs/issues"
+  },
+  "homepage": "https://github.com/Mayankrajora/ReactJs#readme",
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}

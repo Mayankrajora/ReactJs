@@ -1,7 +1,10 @@
-.heading{
-    color: red;
-}
-#paraP1{
+#parent{
     color: green;
     margin: 40px;
+}
+#child{
+    color: red;
+    h3{
+        color: blue;
+    }
 }
