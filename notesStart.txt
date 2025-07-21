@@ -1,3 +1,5 @@
+THIS BRANCH HAS FIRST APP WORK BASIC HEADER , BODY , FOOTER with static only - JUST A RESERVED BRANCH 
+
 import React from "react";
 import ReactDOM from "react-dom/client";
 
