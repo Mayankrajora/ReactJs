@@ -1,0 +1,24 @@
+import React from "react";
+import ReactDOM from "react-dom/client";
+
+// React.createElement ==> Object ==> HTMLElement(when rendered using render())
+
+// const heading = React.createElement(
+//   "h2",
+//   { id: "newHeading" },
+//   "I am new heading"
+// );
+
+// JSX is not HTML -It look like html syntax
+// const heading2 = <h2>I am jsx heading</h2>;
+// const combined = (
+//   <div>
+//     {heading}
+//     {heading2}
+//   </div>
+// );
+// console.log("h1", heading);
+// console.log("h2", heading2);
+// console.log("combined", combined);
+// const root = ReactDOM.createRoot(document.getElementById("root"));
+// root.render(combined);
