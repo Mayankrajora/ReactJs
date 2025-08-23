@@ -1,10 +1,33 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import RestaurantCard from "./RestaurantCard";
-import resList1 from "../utils/mockData";
 
 // BODY Component
 const MainBody = () => {
-  const [resList, setResList] = useState(resList1);
+  const [resList, setResList] = useState([]);
+
+  useEffect(() => {
+    fetchResListData();
+  }, []);
+
+  const fetchResListData = async () => {
+    const response = await fetch(
+      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=28.6711686&lng=77.4691216&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+    );
+
+    const data = await response.json();
+
+    const restaurantCard = data?.data?.cards.find(
+      (card) =>
+        card?.card?.card?.gridElements?.infoWithStyle?.["@type"] ==
+        "type.googleapis.com/swiggy.presentation.food.v2.FavouriteRestaurantInfoWithStyle"
+    );
+
+    const restaurants =
+      restaurantCard?.card?.card?.gridElements?.infoWithStyle?.restaurants;
+
+    console.log("Fetched restaurants:", restaurants);
+    setResList(restaurants || []);
+  };
 
   return (
     <div className="main-body">
