@@ -1,5 +1,6 @@
 // Card Component to reuse
-import { CDN_IMG_URL } from "../utils/constants";
+import { CDN_IMG_URL } from "../../utils/constants";
+import "./RestaurantCard.css";
 
 const RestaurantCard = (props) => {
   const { resData } = props;
