@@ -11,6 +11,7 @@ const Header = () => {
         <a href="http://localhost:1234">
           <img src={LOGO_URL} alt="logo" />
         </a>
+        <h2>FOODIE</h2>
       </div>
       <div className="nav-items">
         <ul>
