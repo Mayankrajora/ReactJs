@@ -1,0 +1,54 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid green;
+  background-color: #e6e6e6;
+  padding: 10px 30px;
+  border-radius: 8px;
+}
+
+.logo{
+  display: flex;
+  gap: 10px;
+  h2 {
+    margin-top: 20px;
+    font-family: Papyrus, fantasy
+  } 
+}
+/* Logo */
+.logo img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+/* Navigation Items */
+.nav-items ul {
+  display: flex;
+  list-style-type: none;
+  gap: 25px;
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-items ul li {
+  padding: 10px 15px;
+}
+
+.nav-items ul li:hover {
+  color: green;
+  cursor: pointer;
+}
+
+/* Login button */
+.login-btn {
+  padding: 0 15px;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #222;
+  color: #e6e6e6;
+}
