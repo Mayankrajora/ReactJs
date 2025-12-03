@@ -2,6 +2,20 @@
   padding: 20px 40px;
 }
 
+.filter{
+  display: flex;
+  gap: 20px;
+  margin-bottom: 5px;
+}
+
+.search-input{
+  padding: 10px;
+}
+
+.or-text{
+  margin-top: 14px;
+}
+
 .filter-btn {
   padding: 10px;
   margin: 5px;

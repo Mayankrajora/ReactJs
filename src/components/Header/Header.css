@@ -9,6 +9,17 @@
 }
 
 /* Logo */
+.logo {
+  display: flex;
+  gap: 10px;  
+}
+
+.logo h2 {
+  margin-top: 20px;
+  font-family: Papyrus, fantasy;
+}
+
+/* Logo image */
 .logo img {
   width: 80px;
   height: 80px;
@@ -16,20 +27,34 @@
 }
 
 /* Navigation Items */
+.nav-items {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
 .nav-items ul {
   display: flex;
-  list-style-type: none;
+  list-style: none;
   gap: 25px;
-  font-size: 18px;
   margin: 0;
   padding: 0;
 }
 
 .nav-items ul li {
   padding: 10px 15px;
+  font-size: 18px;
 }
 
-.nav-items ul li:hover {
+.nav-items ul li a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+  font-size: 18px;
+}
+
+.nav-items ul li:hover,
+.nav-items ul li a:hover {
   color: green;
   cursor: pointer;
 }
@@ -38,9 +63,10 @@
 .login-btn {
   padding: 0 15px;
   cursor: pointer;
+  font-size: 18px;
 }
 
 .login-btn:hover {
-  background-color: #222;
+  background-color: #1f8403;
   color: #e6e6e6;
 }

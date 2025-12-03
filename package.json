@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "This is a React repo...",
   "scripts": {
-    "start":"parcel index.html",
-    "build":"parcel build index.html",
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
     "test": "jest"
   },
   "repository": {
@@ -21,13 +21,15 @@
   },
   "homepage": "https://github.com/Mayankrajora/ReactJs#readme",
   "devDependencies": {
-    "parcel": "^2.15.4"
+    "parcel": "^2.16.1"
   },
   "dependencies": {
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-router": "6.26.2",
+    "react-router-dom": "6.26.2"
   },
-  "browserslist":[
+  "browserslist": [
     "last 2 versions"
   ]
 }
