@@ -1,11 +1,8 @@
-import Footer from "../Footer/Footer";
-import Header from "../Header/Header";
 import "./AboutUs.css";
 
 const AboutUs = () => {
   return (
     <>
-      <Header />
       <div className="about-container">
         <h2>About Us</h2>
         <p>
@@ -20,7 +17,6 @@ const AboutUs = () => {
         </p>
         <p className="thank-you">Thank you for choosing Foodify 🍕❤️</p>
       </div>
-      <Footer />
     </>
   );
 };
