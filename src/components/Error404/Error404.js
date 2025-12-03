@@ -1,11 +1,8 @@
-import Footer from "../Footer/Footer";
-import Header from "../Header/Header";
 import "./Error404.css";
 
 const Error404 = () => {
   return (
     <>
-      <Header />
       <div className="error-container">
         <div className="error-content">
           <h1 className="error-code">404</h1>
@@ -16,7 +13,6 @@ const Error404 = () => {
           <a href="/" className="home-button">Go Back Home</a>
         </div>
       </div>
-      <Footer />
     </>
   );
 };
