@@ -58,6 +58,11 @@ const MainBody = () => {
     setResList(filtered);
   };
 
+  const handleReset = () => {
+    setResList(allResList);
+    setSearchText("");
+  };
+
   return (
     <div className="main-body">
       {resList.length === 0 && showShimmer ? (
@@ -85,6 +90,9 @@ const MainBody = () => {
             <div className="or-text">OR</div>
             <button className="filter-btn" onClick={handleTopRated}>
               Top Rated Restaurants
+            </button>
+            <button className="filter-btn" onClick={handleReset}>
+              Reset Filters
             </button>
           </div>
 
